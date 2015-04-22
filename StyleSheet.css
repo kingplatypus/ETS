@@ -1,0 +1,115 @@
+﻿
+
+body 
+{
+ background-color :#1d2c53;
+ color :#376683 ;  
+ margin:0px;  
+    
+}
+#bodywrapper
+{
+    background:url(img/bg.png) repeat fixed;
+    width:100%; 
+    min-height :1200px;
+}
+
+
+#wrapper
+{
+     text-align :center ;
+     width: 1000px;
+     margin-left :auto ;
+     margin-right :auto ;
+      margin-top :0px;
+      
+}
+
+form
+{
+ width :100%;   
+}
+
+.mybutton
+{
+       
+       color :#00498E; 
+        font-weight :bold ;
+   }
+    
+
+#inner
+{
+  width:850px;  
+}
+
+
+#header
+{
+   
+}
+
+#footer
+{
+  color:White ;
+   font-weight :bold ; 
+     
+}
+
+
+
+#content
+{
+     border-bottom-color :#354b8c;
+      border-width :4px;
+      border-style :inset;
+       background-color :White;
+        padding :15px;
+}
+
+#content a
+{
+    color:#1d2c53;
+}
+
+#content a:hover
+{
+     text-decoration :underline;
+}
+
+#menu
+{
+     font-family :Georgia ;
+}
+
+
+a
+{
+  color :White ;   
+  text-decoration :none;
+}
+a:hover
+{
+    color :#80a2d0; 
+    text-decoration :underline;
+}
+
+h1
+{
+    
+  margin-top :3px;
+  margin-bottom :3px;   
+}
+
+h2
+{
+    
+  margin-top :3px;
+  margin-bottom :3px;   
+}
+h3
+{
+    
+  margin-top :3px;
+  margin-bottom :3px;   
+}
