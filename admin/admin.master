@@ -1,0 +1,142 @@
+﻿<%@ Master Language="VB" CodeFile="admin.master.vb" Inherits="MasterPage" %>
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="cc1" %>
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<title>Welcome to ETS Networks </title>
+<asp:ContentPlaceHolder id="head" runat="server">
+</asp:ContentPlaceHolder>
+<link rel="shortcut icon" href="../favicon.ico"/>
+<link href="../StyleSheet.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<form id="form1" runat="server">
+<asp:ScriptManager ID="ScriptManager1" runat="server" />
+
+
+<div style ="float :right ; margin-right :10px; z-index :1000; position:relative ;">
+<a href="admin/manageadmins.aspx" runat ="server" id="adminlnk">Admin</a>
+<br />
+<a href="login.aspx" runat ="server" id="loginlnk">login</a>
+<asp:LoginStatus runat ="server" ID="loginstatus1" />
+
+<br /><br />
+
+<a href="https://www.facebook.com/ETSNetworksINC" target ="_blank"  >
+<img src="../img/Facebook.png" width="35"/>
+</a>
+<br />
+
+<a href="https://twitter.com/ETSNetworksInc" target ="_blank" >
+<img src="../img/Twitter.png"  width ="35"/>
+</a>
+<br />
+<a href="https://tiredpc.com" target ="_blank" >
+<img src="../img/help2.jpg"  width ="35"/>
+</a>
+
+</div>
+
+<div id="bodywrapper">
+
+
+<div id ="wrapper">
+
+
+
+<div id="header">  
+
+
+
+
+
+<a href="../Default.aspx" >
+<img src="../img/ETS_weblogo2.png" />
+</a> 
+
+</div>
+
+
+
+
+
+<div id="menu">
+<table width="100%" border ="0">
+<tr>
+<td align ="center" width="125" >
+<a href="../default.aspx" >
+Home
+</a>
+</td>
+<td align ="center" width="125">
+<a href="../About_us.aspx" >
+About Us
+</a>
+</td>
+<td align ="center" width="125">
+<a href="../services.aspx" >
+Services
+</a>
+</td>
+<td align ="center" width="125">
+<a href="../etsink.aspx" >
+ETS Ink
+</a>
+</td>
+<td align ="center" width="125">
+<a href="../tips.aspx" >
+Tips &amp; Tricks
+</a>
+</td>
+<td align ="center" width="125">
+<a href="../blog.aspx" >
+Blog
+</a>
+</td>
+<td align ="center" width="125">
+<a href="../contact.aspx" >
+Contact Us
+</a>
+</td>
+<td align ="center" width="125">
+<a href="http://www.nitroux.com" target ="_blank"  >
+Nitroux
+</a>
+</td>
+</tr>
+</table>
+
+</div>
+
+
+
+
+
+
+
+<div id="content">
+<asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+
+</asp:ContentPlaceHolder>
+</div> 
+
+<div id="footer">
+
+
+
+
+
+
+
+</div>
+
+</div>
+
+
+</div> 
+</form>
+</body>
+</html>
