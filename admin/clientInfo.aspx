@@ -9,8 +9,26 @@ TagPrefix="cc2" %>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     <h2>ETS CLIENT INFO</h2>
     
-    <asp:DetailsView ID="DetailsView1" runat="server" BorderStyle="None" BorderWidth="0"
-Width="100%"  AutoGenerateRows="False" DataSourceID="SqlDataSource1" GridLines ="None">
+    <asp:DetailsView ID="DetailsView1" runat="server"
+Width="100%"  AutoGenerateRows="False" DataSourceID="SqlDataSource1" 
+        GridLines ="None" CellPadding="4" ForeColor="#333333">
+        <FooterStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
+        <CommandRowStyle BackColor="#D1DDF1" Font-Bold="True" />
+        <RowStyle BackColor="#EFF3FB" />
+        <FieldHeaderStyle BackColor="#DEE8F5" Font-Bold="True" />
+        <PagerStyle BackColor="#2461BF" ForeColor="White" HorizontalAlign="Center" />
+        <Fields>
+            <asp:BoundField AccessibleHeaderText="Address" HeaderText="Address" />
+            <asp:BoundField AccessibleHeaderText="Billing Address" 
+                HeaderText="Billing Address" />
+            <asp:BoundField AccessibleHeaderText="MSA?" HeaderText="MSA" />
+            <asp:BoundField AccessibleHeaderText="Rate" HeaderText="Rate" />
+            <asp:BoundField AccessibleHeaderText="Main Phone" 
+                HeaderText="Main Phone Number" />
+        </Fields>
+        <HeaderStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
+        <EditRowStyle BackColor="#2461BF" />
+        <AlternatingRowStyle BackColor="White" />
     
     
     </asp:DetailsView>
@@ -81,6 +99,17 @@ Width="100%"  AutoGenerateRows="False" DataSourceID="SqlDataSource1" GridLines =
                 <asp:BoundField AccessibleHeaderText="Item Name" HeaderText="Item Name" />
                 <asp:BoundField AccessibleHeaderText="Details" HeaderText="Details" />
             </Columns>
+            <FooterStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
+            <PagerStyle BackColor="#2461BF" ForeColor="White" HorizontalAlign="Center" />
+            <SelectedRowStyle BackColor="#D1DDF1" Font-Bold="True" ForeColor="#333333" />
+            <HeaderStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
+            <EditRowStyle BackColor="#2461BF" />
+            <AlternatingRowStyle BackColor="White" />
+        </asp:GridView>
+        <h3>Recent Tickets</h3>
+        <asp:GridView ID="tickets" runat="server" CellPadding="4" 
+        ForeColor="#333333" GridLines="None">
+            <RowStyle BackColor="#EFF3FB" />
             <FooterStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
             <PagerStyle BackColor="#2461BF" ForeColor="White" HorizontalAlign="Center" />
             <SelectedRowStyle BackColor="#D1DDF1" Font-Bold="True" ForeColor="#333333" />
