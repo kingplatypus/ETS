@@ -34,7 +34,7 @@ Public Class findclient
             C.Open()
 
             With cmd
-              .CommandText = "SELECT DISTINCT [clientname] FROM [clients] WHERE [clientname] LIKE '%" & prefixText & "%' "
+                .CommandText = "SELECT DISTINCT [clientname] , [key] FROM [clients] WHERE [clientname] LIKE '%" & prefixText & "%' "
                
                 .Connection = C
                 .Parameters.Add("@Value", SqlDbType.NVarChar, 255).Value = prefixText
@@ -44,7 +44,7 @@ Public Class findclient
                 ReDim sa(dt.Rows.Count - 1)
                 sa(0) = "Search String: " & prefixText
                 For i As Int32 = 0 To dt.Rows.Count - 1
-                    sa(i) = (dt.Rows(i)(0)) '& vbCrLf '& "Groupname= " & (dt.Rows(i)(1))
+                    sa(i) = (dt.Rows(i)(0)) & ": " & (dt.Rows(i)(1)) '& vbCrLf '& "Groupname= " & (dt.Rows(i)(1))
                 Next
             End With
                         
