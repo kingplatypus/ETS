@@ -113,3 +113,36 @@ h3
   margin-top :3px;
   margin-bottom :3px;   
 }
+
+.autocomphighlite
+{
+background-color:#e9e3d2 ;
+font-size :small ;
+border: 1px solid black; 
+}
+
+
+.autocompitem
+{
+
+border: 1px solid black; 
+font-size :small ;
+
+}
+
+.ListItemHiliteText
+{
+background-color:#ededa8;
+font-weight :bold ;
+font-style :italic ;
+color: red;
+
+
+}
+
+.watermark
+{
+ font-style :italic ;
+ color :Gray ;   
+    
+}
